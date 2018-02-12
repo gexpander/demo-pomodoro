@@ -31,6 +31,9 @@ class Pymodoro:
     def on_btn(self, snapshot, timestamp):
         if self.phase == PH_BREAK_OVER:
             self.switch(PH_WORK)
+            
+        elif self.phase == PH_WORK:
+            self.switch(PH_WORK) # restart
 
         elif self.phase == PH_WORK_OVER:
             self.switch(PH_BREAK)
