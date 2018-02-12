@@ -20,7 +20,7 @@ class Pymodoro:
         client = gex.Client(gex.TrxRawUSB())
         self.btn = gex.DIn(client, 'btn')
         self.neo = gex.Neopixel(client, 'neo')
-        self.btn.on_trigger(0x01, self.on_btn)
+        self.btn.on_trigger([0], self.on_btn)
 
         self.switch(PH_BREAK_OVER)
         self.display()
