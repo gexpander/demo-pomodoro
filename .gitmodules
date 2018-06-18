@@ -1,0 +1,3 @@
+[submodule "gex"]
+	path = gex
+	url = https://git.ondrovo.com/gex/gex-client-py.git
